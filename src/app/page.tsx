@@ -21,8 +21,8 @@ export default function Home() {
   };
 
   return (
-    <div className="pt-28 mx-10 pb-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 items-center w-full">
+    <div className="pt-28 px-4 md:px-10 pb-10 max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-center w-full">
         <Card className="w-full bg-[#EAEFF5] flex flex-col items-center space-y-2 justify-center p-6">
           <CardTitle className="text-center text-black">Total Tasks</CardTitle>
           <CardDescription className="text-center font-semibold text-2xl text-black">1,743</CardDescription>
@@ -40,18 +40,22 @@ export default function Home() {
           <CardDescription className="text-center font-semibold text-2xl text-white">78</CardDescription>
         </Card>
       </div>
-      <div className="mt-10">
-        <ButtonGroup>
-          <Button variant="outline" size="lg">7 days</Button>
-          <Button variant="outline" size="lg">30 days</Button>
-          <Button variant="outline" size="lg">Quarter</Button>
-        </ButtonGroup>
+
+      <div className="mt-6">
+        <div className="inline-flex flex-wrap gap-2">
+          <ButtonGroup>
+            <Button variant="outline" size="lg">7 days</Button>
+            <Button variant="outline" size="lg">30 days</Button>
+            <Button variant="outline" size="lg">Quarter</Button>
+          </ButtonGroup>
+        </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row gap-10 items-start mt-5">
-        <div className="flex flex-col space-y-3 items-center justify-center w-full">
+
+      <div className="w-full flex flex-col md:flex-row gap-6 items-start mt-6">
+        <div className="flex flex-col space-y-4 w-full md:flex-1">
           <Card className="p-4 w-full flex flex-col space-y-4">
             <CardTitle>Task Trends</CardTitle>
-            <CardDescription className="flex gap-3 items-center">
+            <CardDescription className="flex gap-3 items-center flex-wrap">
               <div className="flex gap-2 items-center">
                 <span className="w-3 h-3 rounded-full p-1 bg-blue-500"></span>
                 <p className="text-sm">Created</p>
@@ -63,10 +67,11 @@ export default function Home() {
             </CardDescription>
             <TaskTrendsLineChart />
           </Card>
-          <Card className="p-4 w-full flex flex-col space-y-4 justify-center">
+
+          <Card className="p-4 w-full flex flex-col space-y-4">
             <CardTitle>Recent Tasks</CardTitle>
             <div>
-              <div className="rounded-xl border p-4 w-full max-w-lg mx-auto">
+              <div className="rounded-xl border p-0 w-full">
                 <div className="divide-y divide-gray-100">
                   <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
                     <div className="flex items-center space-x-3">
@@ -82,6 +87,7 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
+
                   <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
                     <div className="flex items-center space-x-3">
                       <div className={`w-2 h-2 rounded-full ${dotColors.green}`}></div>
@@ -96,6 +102,7 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
+
                   <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
                     <div className="flex items-center space-x-3">
                       <div className={`w-2 h-2 rounded-full ${dotColors.blue}`}></div>
@@ -108,6 +115,7 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
+
                   <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 cursor-pointer">
                     <div className="flex items-center space-x-3">
                       <div className={`w-2 h-2 rounded-full ${dotColors.purple}`}></div>
@@ -127,26 +135,29 @@ export default function Home() {
             </CardFooter>
           </Card>
         </div>
-        <div className="flex flex-col space-y-3 items-center justify-center">
-          <Card className="p-4 w-[350px] flex flex-col space-y-2 justify-center">
+
+        <div className="flex flex-col space-y-4 w-full md:w-[350px]">
+          <Card className="p-4 w-full flex flex-col space-y-2">
             <CardTitle>Categories</CardTitle>
             <CardContent className="flex justify-center items-center">
               <CategoriesBarChart />
             </CardContent>
           </Card>
-          <Card className="p-4 w-[350px] flex flex-col space-y-2 justify-center">
+
+          <Card className="p-4 w-full flex flex-col space-y-2">
             <CardTitle>Productivity Score</CardTitle>
             <CardContent className="flex justify-center items-center">
               <ProductivityChart score={90} />
             </CardContent>
           </Card>
-          <Card className="p-4 w-[350px] flex flex-col space-y-4 justify-center">
+
+          <Card className="p-4 w-full flex flex-col space-y-4">
             <CardTitle>Quick Add Task</CardTitle>
             <CardContent className="flex gap-3 items-center">
               <span className="w-8 h-8 rounded-full p-2 flex justify-center items-center bg-blue-500">
                 <Plus size={16} color="white" />
               </span>
-              <input type="text" placeholder="Task Name" className="flex-1 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <input type="text" placeholder="Task Name" className="flex-1 w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </CardContent>
           </Card>
         </div>

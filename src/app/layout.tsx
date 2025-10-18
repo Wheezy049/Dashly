@@ -26,12 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+ <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 min-h-screen w-screen`}
       >
-        <div className="w-full bg-gray-50 h-full">
+        <div className="min-h-screen w-full">
           <Sidebar />
-          <main className="ml-64">
+          <main className="ml-20 md:ml-64 w-full">
             <Navbar />
             {children}
           </main>
