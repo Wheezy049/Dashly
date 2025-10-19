@@ -1,10 +1,9 @@
 "use client"
 import { Bell, Search, UserCircleIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
-import { usePathname, useSearchParams, type ReadonlyURLSearchParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 function Navbar() {
-
   const [isScrolled, setIsScrolled] = useState(false)
   const THRESHOLD = 20
 
@@ -25,31 +24,17 @@ function Navbar() {
   }, [isScrolled])
 
   const pathname = usePathname() || '/'
-  const searchParams = useSearchParams()
 
-  const getTitleFromPath = (path: string, params: ReadonlyURLSearchParams | null) => {
-    const override = params?.get('title')
-    if (override) return override
-
-    switch (path) {
-      case '/':
-        return 'Dashboard'
-      case '/profile':
-        return 'Profile'
-      case '/tasks':
-        return 'Tasks'
-      case '/analytics':
-        return 'Analytics'
-      case '/settings':
-        return 'Settings'
-      default:
-        const parts = path.split('/').filter(Boolean)
-        return parts.length ? parts.join(' / ') : 'Dashboard'
-    }
+  // Map pathnames to titles
+  const titleMap: Record<string, string> = {
+    '/': 'Dashboard',
+    '/profile': 'Profile',
+    '/tasks': 'Tasks',
+    '/analytics': 'Analytics',
+    '/settings': 'Settings',
   }
 
-  const title = getTitleFromPath(pathname, searchParams)
-
+  const title = titleMap[pathname] || pathname.split('/').filter(Boolean).join(' / ') || 'Dashboard'
 
   return (
     <div
