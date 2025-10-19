@@ -32,18 +32,18 @@ export function TaskTrendsLineChart() {
           margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
         >
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E0E0E0" />
-          
+
           <XAxis dataKey="name" axisLine={false} tickLine={false} style={{ fontSize: '12px' }} />
-          
-          <YAxis 
-            axisLine={false} 
-            tickLine={false} 
-            tickFormatter={(value) => `${value}%`} 
+
+          <YAxis
+            axisLine={false}
+            tickLine={false}
+            tickFormatter={(value) => `${value}%`}
             domain={[0, 60]}
             style={{ fontSize: '12px' }}
           />
-          
-          <Tooltip 
+
+          <Tooltip
             contentStyle={{ backgroundColor: '#1E2543', border: 'none', borderRadius: '4px' }}
             labelStyle={{ color: '#FFFFFF' }}
           />

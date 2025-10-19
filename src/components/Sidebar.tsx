@@ -6,22 +6,21 @@ import React from 'react'
 
 function Sidebar() {
 
-        const pathname = usePathname() || '/'
+    const pathname = usePathname() || '/'
 
     const isActive = (path: string) =>
-      path === '/' ? pathname === '/' : pathname.startsWith(path)
+        path === '/' ? pathname === '/' : pathname.startsWith(path)
 
     return (
         <nav
-          aria-label="Sidebar"
-          className="bg-[#1E2543] w-20 md:w-64 h-full p-3 md:p-6 fixed left-0 top-0 overflow-y-auto transition-[width] duration-200 ease-in-out z-40"
+            aria-label="Sidebar"
+            className="bg-[#1E2543] w-20 md:w-64 h-full p-3 md:p-6 fixed left-0 top-0 overflow-y-auto transition-[width] duration-200 ease-in-out z-40"
         >
             <div className="flex items-center gap-3 mb-6">
-              {/* small collapsed logo / full title on md+ */}
-              <div className="flex items-center justify-center w-8 h-8  md:hidden rounded bg-white/10 text-white">
-                <span className="text-base font-bold">D</span>
-              </div>
-              <h1 className="text-white text-xl md:text-3xl font-bold hidden md:block">Dashly</h1>
+                <div className="flex items-center justify-center w-8 h-8  md:hidden rounded bg-white/10 text-white">
+                    <span className="text-base font-bold">D</span>
+                </div>
+                <h1 className="text-white text-xl md:text-3xl font-bold hidden md:block">Dashly</h1>
             </div>
 
             <ul className="flex flex-col justify-start items-start mt-4 space-y-4 w-full">

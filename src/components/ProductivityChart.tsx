@@ -6,7 +6,7 @@ interface ProductivityChartProps {
 }
 
 export function ProductivityChart({ score }: ProductivityChartProps) {
-  
+
   const finalChartData = [
     { name: 'Background', uv: 100, fill: 'transparent' },
     { name: 'Border', uv: 100, fill: '#5C66FF20' },

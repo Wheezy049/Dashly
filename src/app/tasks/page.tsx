@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardTitle } from '@/components/ui/card'
 import { Switch } from '@/components/ui/switch'
-import { Car, Plus } from 'lucide-react'
+import { Plus } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 

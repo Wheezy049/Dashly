@@ -57,71 +57,71 @@ export default function Home() {
           </Card>
 
           <Card className="p-4 w-full flex flex-col space-y-4">
-                      <CardTitle>Recent Tasks</CardTitle>
-                      <div>
-                        <div className="rounded-xl border p-0 w-full">
-                          <div className="divide-y divide-gray-100">
-                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
-                              <div className="flex items-center space-x-3">
-                                <div className={`w-2 h-2 rounded-full bg-[#FF668D]`}></div>
-                                <span className="text-sm font-medium text-[#242D3C]">Design new homepage</span>
-                              </div>
-                              <div className="flex items-center space-x-3">
-                                <span className={`text-xs font-semibold px-2 py-0.5 rounded-md bg-[#FF668D] text-white`}>
-                                  Design
-                                </span>
-                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                                  17 Jul
-                                </span>
-                              </div>
-                            </div>
-          
-                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
-                              <div className="flex items-center space-x-3">
-                                <div className={`w-2 h-2 rounded-full bg-[#37CD91]`}></div>
-                                <span className="text-sm font-medium text-[#242D3C]">Design</span>
-                              </div>
-                              <div className="flex items-center space-x-3">
-                                <span className={`text-xs font-semibold px-2 py-0.5 rounded-md bg-[#37CD91] text-white`}>
-                                  Work
-                                </span>
-                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                                  10 Jul
-                                </span>
-                              </div>
-                            </div>
-          
-                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
-                              <div className="flex items-center space-x-3">
-                                <div className={`w-2 h-2 rounded-full bg-[#5C66FF]`}></div>
-                                <span className="text-sm font-medium text-[#242D3C]">Update user feedback</span>
-                              </div>
-                              <div className="flex items-center space-x-3">
-                                <span className="text-xs text-gray-400">Design</span>
-                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                                  202 NIM
-                                </span>
-                              </div>
-                            </div>
-          
-                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 cursor-pointer">
-                              <div className="flex items-center space-x-3">
-                                <div className={`w-2 h-2 rounded-full bg-[#8E24AA]`}></div>
-                                <span className="text-sm font-medium text-[#242D3C]">Taleods</span>
-                              </div>
-                              <div className="flex items-center space-x-3">
-                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                                  202 MM
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <p className="text-sm text-blue-500">View All Tasks</p>
-                      </div>
-                    </Card>
+            <CardTitle>Recent Tasks</CardTitle>
+            <div>
+              <div className="rounded-xl border p-0 w-full">
+                <div className="divide-y divide-gray-100">
+                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-2 h-2 rounded-full bg-[#FF668D]`}></div>
+                      <span className="text-sm font-medium text-[#242D3C]">Design new homepage</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-md bg-[#FF668D] text-white`}>
+                        Design
+                      </span>
+                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                        17 Jul
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-2 h-2 rounded-full bg-[#37CD91]`}></div>
+                      <span className="text-sm font-medium text-[#242D3C]">Design</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-md bg-[#37CD91] text-white`}>
+                        Work
+                      </span>
+                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                        10 Jul
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-2 h-2 rounded-full bg-[#5C66FF]`}></div>
+                      <span className="text-sm font-medium text-[#242D3C]">Update user feedback</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <span className="text-xs text-gray-400">Design</span>
+                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                        202 NIM
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 cursor-pointer">
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-2 h-2 rounded-full bg-[#8E24AA]`}></div>
+                      <span className="text-sm font-medium text-[#242D3C]">Taleods</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                        202 MM
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p className="text-sm text-blue-500">View All Tasks</p>
+            </div>
+          </Card>
         </div>
 
         <div className="flex flex-col space-y-4 w-full md:w-[350px]">
