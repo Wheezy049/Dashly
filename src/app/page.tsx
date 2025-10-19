@@ -3,25 +3,13 @@ import { TaskTrendsLineChart } from "@/components/LineChart";
 import { ProductivityChart } from "@/components/ProductivityChart";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
-import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { Plus } from "lucide-react";
 
 export default function Home() {
 
-  const dotColors = {
-    red: 'bg-[#FF668D]',
-    green: 'bg-[#37CD91]',
-    blue: 'bg-[#5C66FF]',
-    purple: 'bg-[#8E24AA]',
-  };
-
-  const statusColors = {
-    red: 'bg-[#FF668D] text-white',
-    green: 'bg-[#37CD91] text-white',
-  };
-
   return (
-    <div className="pt-28 px-4 md:px-10 pb-10 max-w-[1200px] mx-auto">
+    <div className="pb-10 w-full max-w-7xl">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-center w-full">
         <Card className="w-full bg-[#EAEFF5] flex flex-col items-center space-y-2 justify-center p-6">
           <CardTitle className="text-center text-black">Total Tasks</CardTitle>
@@ -69,71 +57,71 @@ export default function Home() {
           </Card>
 
           <Card className="p-4 w-full flex flex-col space-y-4">
-            <CardTitle>Recent Tasks</CardTitle>
-            <div>
-              <div className="rounded-xl border p-0 w-full">
-                <div className="divide-y divide-gray-100">
-                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
-                    <div className="flex items-center space-x-3">
-                      <div className={`w-2 h-2 rounded-full ${dotColors.red}`}></div>
-                      <span className="text-sm font-medium text-[#242D3C]">Design new homepage</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-md ${statusColors.red}`}>
-                        Design
-                      </span>
-                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                        17 Jul
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
-                    <div className="flex items-center space-x-3">
-                      <div className={`w-2 h-2 rounded-full ${dotColors.green}`}></div>
-                      <span className="text-sm font-medium text-[#242D3C]">Design</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-md ${statusColors.green}`}>
-                        Work
-                      </span>
-                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                        10 Jul
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
-                    <div className="flex items-center space-x-3">
-                      <div className={`w-2 h-2 rounded-full ${dotColors.blue}`}></div>
-                      <span className="text-sm font-medium text-[#242D3C]">Update user feedback</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <span className="text-xs text-gray-400">Design</span>
-                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                        202 NIM
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 cursor-pointer">
-                    <div className="flex items-center space-x-3">
-                      <div className={`w-2 h-2 rounded-full ${dotColors.purple}`}></div>
-                      <span className="text-sm font-medium text-[#242D3C]">Taleods</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <span className="text-xs text-gray-400 min-w-[50px] text-right">
-                        202 MM
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <CardFooter>
-              <p className="text-sm text-blue-500">View All Tasks</p>
-            </CardFooter>
-          </Card>
+                      <CardTitle>Recent Tasks</CardTitle>
+                      <div>
+                        <div className="rounded-xl border p-0 w-full">
+                          <div className="divide-y divide-gray-100">
+                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
+                              <div className="flex items-center space-x-3">
+                                <div className={`w-2 h-2 rounded-full bg-[#FF668D]`}></div>
+                                <span className="text-sm font-medium text-[#242D3C]">Design new homepage</span>
+                              </div>
+                              <div className="flex items-center space-x-3">
+                                <span className={`text-xs font-semibold px-2 py-0.5 rounded-md bg-[#FF668D] text-white`}>
+                                  Design
+                                </span>
+                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                                  17 Jul
+                                </span>
+                              </div>
+                            </div>
+          
+                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
+                              <div className="flex items-center space-x-3">
+                                <div className={`w-2 h-2 rounded-full bg-[#37CD91]`}></div>
+                                <span className="text-sm font-medium text-[#242D3C]">Design</span>
+                              </div>
+                              <div className="flex items-center space-x-3">
+                                <span className={`text-xs font-semibold px-2 py-0.5 rounded-md bg-[#37CD91] text-white`}>
+                                  Work
+                                </span>
+                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                                  10 Jul
+                                </span>
+                              </div>
+                            </div>
+          
+                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 border-b border-gray-100 cursor-pointer">
+                              <div className="flex items-center space-x-3">
+                                <div className={`w-2 h-2 rounded-full bg-[#5C66FF]`}></div>
+                                <span className="text-sm font-medium text-[#242D3C]">Update user feedback</span>
+                              </div>
+                              <div className="flex items-center space-x-3">
+                                <span className="text-xs text-gray-400">Design</span>
+                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                                  202 NIM
+                                </span>
+                              </div>
+                            </div>
+          
+                            <div className="flex items-center justify-between p-3 transition duration-150 hover:bg-gray-50 cursor-pointer">
+                              <div className="flex items-center space-x-3">
+                                <div className={`w-2 h-2 rounded-full bg-[#8E24AA]`}></div>
+                                <span className="text-sm font-medium text-[#242D3C]">Taleods</span>
+                              </div>
+                              <div className="flex items-center space-x-3">
+                                <span className="text-xs text-gray-400 min-w-[50px] text-right">
+                                  202 MM
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm text-blue-500">View All Tasks</p>
+                      </div>
+                    </Card>
         </div>
 
         <div className="flex flex-col space-y-4 w-full md:w-[350px]">
@@ -146,9 +134,9 @@ export default function Home() {
 
           <Card className="p-4 w-full flex flex-col space-y-2">
             <CardTitle>Productivity Score</CardTitle>
-            <CardContent className="flex justify-center items-center">
+            <div className="flex justify-center items-center">
               <ProductivityChart score={90} />
-            </CardContent>
+            </div>
           </Card>
 
           <Card className="p-4 w-full flex flex-col space-y-4">

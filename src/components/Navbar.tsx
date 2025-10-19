@@ -52,7 +52,11 @@ function Navbar() {
 
 
   return (
-    <div className={` px-4 md:px-10 py-4 md:py-6 fixed left-20 md:left-64 right-0 z-50 ${isScrolled ? 'shadow-md bg-white/70 backdrop-blur-sm' : 'bg-transparent'}`}>
+    <div
+  className={`fixed top-0 left-20 md:left-64 right-0 z-50 px-4 md:px-10 py-4 md:py-6 transition-all max-w-[calc(100vw-5rem)] md:max-w-[calc(100vw-16rem)] overflow-x-hidden ${
+    isScrolled ? 'shadow-md bg-white/70 backdrop-blur-sm' : 'bg-transparent'
+  }`}
+>
             <div className='w-full flex justify-between items-center gap-4'>
            <h1 className='text-black font-bold text-lg md:text-2xl truncate'>{title}</h1>
 

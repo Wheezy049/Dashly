@@ -10,7 +10,7 @@ const CATEGORY_DATA = [
 
 export function CategoriesBarChart() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center w-full h-48">
+    <div className="flex flex-col md:flex-row gap-3 items-center justify-center w-full h-48">
       <div className="w-1/2 h-full">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>

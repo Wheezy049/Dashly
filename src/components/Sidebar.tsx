@@ -18,9 +18,8 @@ function Sidebar() {
         >
             <div className="flex items-center gap-3 mb-6">
               {/* small collapsed logo / full title on md+ */}
-              <div className="flex items-center justify-center w-8 h-8 rounded bg-white/10 text-white">
-                <span className="text-sm font-bold md:hidden">D</span>
-                <Home size={18} className="hidden md:block" />
+              <div className="flex items-center justify-center w-8 h-8  md:hidden rounded bg-white/10 text-white">
+                <span className="text-base font-bold">D</span>
               </div>
               <h1 className="text-white text-xl md:text-3xl font-bold hidden md:block">Dashly</h1>
             </div>
