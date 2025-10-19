@@ -1,9 +1,10 @@
-"use client"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
+// const Sidebar = dynamic(() => import("@/components/Sidebar"), { ssr: false });
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
